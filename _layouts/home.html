@@ -1,0 +1,41 @@
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <meta name="theme-color" content="#4F7DC9">
+    <title>Video Kit</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="static/codelab-elements.css">
+</head>
+<body>
+<huawei-codelab id="HMSVideoKit" feedback-link="https://developer.huawei.com/consumer/en/support/feedback" selected="0" codelab-title="Video Kit">
+    <div id="main">
+        <div id="steps">
+			{% for post in site.posts %}
+            <huawei-codelab-step label="{{ post.title | escape }}" duration="{{ post.description }}">
+                {{ post.content }}
+            </huawei-codelab-step>
+			{% endfor %}
+        </div>
+        <div id="controls">
+            <div id="fabs">
+                <a href="index.html#" id="previous-step" title="Previous step">Back</a>
+                <div class="spacer"></div>
+                <a href="index.html#" id="next-step" title="Next step">Next</a><a href="https://developer.huawei.com/consumer/en/community/codelabs" id="done" hidden="" title="Codelab complete">Done</a>
+            </div>
+        </div>
+    </div>
+</huawei-codelab>
+<text id="copy-alertMsg" class="copy-alert">Code copied</text>
+
+<script src="static/native-shim.js"></script>
+<script src="static/custom-elements.js"></script>
+<script src="static/prettify.js"></script>
+<script src="static/codelab-elements.js"></script>
+<script src="static/origin_hasdk.js"></script>
+<script src="static/self-defined.js"></script>
+
+</body>
+</html>
+
