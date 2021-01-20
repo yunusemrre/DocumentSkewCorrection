@@ -35,62 +35,24 @@ description: 5
 		</span><span class="pun">}</span><span class="pln">
 	</span><span class="pun">}</span><span class="pln">
 	</span></code></pre>
+	<li>Go to <strong>buildscript</strong> &gt; <strong>repositories</strong> and configure the Maven repository address for the HMS Core SDK.<pre><div id="copy-button2" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code><span class="pln">buildscript </span><span class="pun">{</span><span class="pln">
+		repositories </span><span class="pun">{</span><span class="pln">
+		   maven </span><span class="pun">{</span><span class="pln">url </span><span class="str">'https://developer.huawei.com/repo/'</span><span class="pun">}</span><span class="pln">
+			</span><span class="pun">...</span><span class="pln">
+		</span><span class="pun">}</span><span class="pln">
+		</span><span class="pun">...</span><span class="pln">
+	</span><span class="pun">}</span><span class="pln">
+	</span></code></pre>
 	</li>
-    <li>Go to 
-      <strong>buildscript</strong> &gt; 
-      <strong>repositories</strong> and configure the Maven repository address for the HMS Core SDK.
-      <pre>
-        <div id="copy-button2" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div>
-        <code>
-          <span class="pln">buildscript </span>
-          <span class="pun">{</span>
-          <span class="pln">
-  repositories </span>
-          <span class="pun">{</span>
-          <span class="pln">
-     maven </span>
-          <span class="pun">{</span>
-          <span class="pln">url </span>
-          <span class="str">'https://developer.huawei.com/repo/'</span>
-          <span class="pun">}</span>
-          <span class="pln"></span>
-          <span class="pun">...</span>
-          <span class="pln"></span>
-          <span class="pun">}</span>
-          <span class="pln"></span>
-          <span class="pun">...</span>
-          <span class="pln"></span>
-          <span class="pun">}</span>
-          <span class="pln"></span>
-        </code>
-      </pre>
-    </li>
-    <li>Go to 
-      <strong>buildscript</strong> &gt; 
-      <strong>dependencies</strong> and add build dependencies.
-      <pre>
-        <div id="copy-button3" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div>
-        <code>
-          <span class="pln">buildscript </span>
-          <span class="pun">{</span>
-          <span class="pln">
-  dependencies </span>
-          <span class="pun">{</span>
-          <span class="pln"></span>
-          <span class="str">                   //Replace {agconnect_version} with the actual AGC plugin version number.</span>
-          <span class="pln"></span>
-          <span class="str">                   //Example: classpath 'com.huawei.agconnect:agcp: 1.4.1.300'</span>
-          <span class="pln">
-    classpath </span>
-          <span class="str">'com.huawei.agconnect:agcp:{agconnect_version}'</span>
-          <span class="pln"></span>
-          <span class="pun">}</span>
-          <span class="pln"></span>
-          <span class="pun">}</span>
-          <span class="pln"></span>
-        </code>
-      </pre>
-    </li>
+    <li>Go to <strong>buildscript</strong> &gt; <strong>dependencies</strong> and add build dependencies.<pre><div id="copy-button3" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code><span class="pln">buildscript </span><span class="pun">{</span><span class="pln">
+		dependencies </span><span class="pun">{</span><span class="pln">
+     </span><span class="str">                   //Replace {agconnect_version} with the actual AGC plugin version number.</span><span class="pln">
+     </span><span class="str">                   //Example: classpath 'com.huawei.agconnect:agcp: 1.4.1.300'</span><span class="pln">
+			classpath </span><span class="str">'com.huawei.agconnect:agcp:{agconnect_version}'</span><span class="pln">
+		</span><span class="pun">}</span><span class="pln">
+	</span><span class="pun">}</span><span class="pln">
+	</span></code></pre>
+	</li>
   </ul>
   <p>
     <strong>2. Configure the dependency package in the app's build.gradle file.</strong>
