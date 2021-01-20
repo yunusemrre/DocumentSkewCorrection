@@ -4,12 +4,12 @@ description: 15
 ---
 
 <p><strong>1. In the MainActivityPresenter.kt locate following line for creating text box detection/correction analyzer.</strong></p>
-<pre><div id="copy-button10" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO Create a text box detection/correction analyzer.
+<pre><div id="copy-button11" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO Create a text box detection/correction analyzer.
 <span class="pln">
 </span></code></pre>
 
 <p><strong>2. Initialize text box detection/correction analyzer.</strong></p>
-<pre><div id="copy-button11" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
+<pre><div id="copy-button12" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
 <span class="pln"></span><span class="kwd">val</span><span class="pln"> settings = </span><span class="typ">MLDocumentSkewCorrectionAnalyzerSetting</span><span class="pln">.Factory().create()</span>
 <span class="kwd">val</span><span class="pln"> analyzer = </span><span class="typ">MLDocumentSkewCorrectionAnalyzerFactory</span><span class="pln">.getInstance().getDocumentSkewCorrectionAnalyzer </span><span class="pun">{</span>
   <span class="pln">setting</span>
@@ -18,12 +18,12 @@ description: 15
 </span></code></pre>
 
 <p><strong>3. Locate following line for creating ML frame object by using Bitmap.</strong></p>
-<pre><div id="copy-button12" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO Create an MLFrame object by using android.graphics.Bitmap for the analyzer to detect images
+<pre><div id="copy-button13" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO Create an MLFrame object by using android.graphics.Bitmap for the analyzer to detect images
 <span class="pln">
 </span></code></pre>
 
 <p><strong>4. Initialize ML frame object by using Bitmap.</strong></p>
-<pre><div id="copy-button13" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
+<pre><div id="copy-button14" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
 <span class="kwd">val</span><span class="pln"> frame = </span><span class="typ">MLFrame</span><span class="pln">.fromBitmap(bitmapImage)</span>
 <span class="pln"></span>
 </code></pre>
@@ -35,12 +35,12 @@ description: 15
 </aside>
 
 <p><strong>5. After initializations locate following line to call analyseFrame object to detect the box synchronously.</strong></p>
-<pre><div id="copy-button14" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO Call the analyseFrame synchronous method to detect the text box.
+<pre><div id="copy-button15" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO Call the analyseFrame synchronous method to detect the text box.
 <span class="pln">
 </span></code></pre>
 
 <p><strong>6. Create analyseFrame method and complete the code for detecting the text box synchronously.</strong></p>
-<pre><div id="copy-button15" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
+<pre><div id="copy-button16" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
 <span class="kwd">val</span><span class="pln"> detectTask = SparseArray<</span><span class="typ">MLDocumentSkewDetectResult</span><span class="pln">> = analyzer.analyseFrame(frame)</span>
 <span class="kwd">if </span><span class="pln">(detectTask.get(0).</span><span class="typ">resultCode</span><span class="pln"> == MLDocumentSkewCorrectionConstant.</span><span class="type">SUCCESS</span><span>)</span> <span class="pun">{</span>
   <span class="pln">//Detection Success</span>
@@ -52,7 +52,7 @@ description: 15
 <aside class = "special">
 <p><strong>Note:</strong> If text box needs to be detected asynchronously, following way can be used.</p>
 </aside>
-<pre><div id="copy-button16" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO Call the analyseFrame asynchronous method to detect the text box.
+<pre><div id="copy-button17" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO Call the analyseFrame asynchronous method to detect the text box.
 <span class="kwd">val</span><span class="pln"> detectTaskAsync = Task<</span><span class="typ">MLDocumentSkewDetectResult</span><span class="pln">> = analyzer.asyncDocumentSkewDetect(frame)</span>
 <span class="pln">detectTaskAsync?.addonSuccessListener (OnSuccessListener() </span><span class="pun">{ </span>
   <span class="pln">//Detection Success</span>
@@ -65,23 +65,23 @@ description: 15
 <p>When the return code is success, the coordinates of the four vertices of text box are returned.</p>
 
 <p><strong>7. Locate following line to get detection result if detection is success</strong></p>
-<pre><div id="copy-button17" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO If detection is success get detection result.
+<pre><div id="copy-button18" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO If detection is success get detection result.
 <span class="pln">
 </span></code></pre>
 
 <p><strong>8. Get first result if detection is success</strong></p>
-<pre><div id="copy-button18" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
+<pre><div id="copy-button19" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
 <span class="kwd">val</span><span class="pln"> detectResult : MLDocumentSkewDetectResult = detectTask.get(0) </span>
 <span class="pln">
 </span></code></pre>
 
 <p><strong>9. Locate following line to obtain coordinates of result</strong></p>
-<pre><div id="copy-button19" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO Obtain the coordinate data for the four vertices of the text box and create an MLDocumentSkewCorrectionCoordinateInput object
+<pre><div id="copy-button21" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO Obtain the coordinate data for the four vertices of the text box and create an MLDocumentSkewCorrectionCoordinateInput object
 <span class="pln">
 </span></code></pre>
 
 <p><strong>10. Obtain the coordinates of detection result and complete the code to create MLDocumentSkewCorrectionCoordinateInput result.</strong></p>
-<pre><div id="copy-button20" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
+<pre><div id="copy-button22" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
 <span class="kwd">val</span><span class="pln"> leftTop : Point = detectResult.</span><span class="kwd">leftTopPosition</span>
 <span class="kwd">val</span><span class="pln"> rightTop : Point = detectResult.</span><span class="kwd">rightTopPosition</span>
 <span class="kwd">val</span><span class="pln"> leftBottom : Point = detectResult.</span><span class="kwd">leftBottomPosition</span>
@@ -104,11 +104,11 @@ description: 15
 </aside>
 
 <p><strong>11. Locate following line to correct text box.</strong></p>
-<pre><div id="copy-button21" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO Call the syncDocumentSkewCorrect synchronous method to correct the text box.<span class="pln">
+<pre><div id="copy-button23" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO Call the syncDocumentSkewCorrect synchronous method to correct the text box.<span class="pln">
 </span></code></pre>
 
 <p><strong>12. Call synchronized syncDocumentSkew method and complete the code to correct the text box.</strong></p>
-<pre><div id="copy-button22" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
+<pre><div id="copy-button24" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
 <span class="kwd">val</span><span class="pln"> correct: SparseArray<</span><span class="kwd">MLDocumentSkewCorrectionResult</span><span class="pln">> = analyzer.syncDocumentSkewCorrect(frame,coordinateData)</span>
 
 <span class="kwd">if</span><span class="pln"> (correct.get(0)?. </span><span class="kwd">resultCode</span><span class="pln"> == </span><span class="typ">MLDocumentSkewCorrectionConstant></span><span class="pln">.</span><span class="kwd">SUCCESS</span><span class="pln">) { </span>
@@ -122,7 +122,7 @@ description: 15
 <aside class="special">
   <p><strong>Note</strong>: If text box needs to be corrected asynchronously, following way can be used. </p>
 </aside>
-<pre><div id="copy-button23" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
+<pre><div id="copy-button25" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
 <span class="kwd">val</span><span class="pln"> correctAsync : Task<</span><span class="typ">MLDocumentSkewCorrectionResult</span><span class="pln">> = analyzer.asyncDocumentSkewCorrect(frame,coordinateData)</span>
 
 <span class="pln">correctAsync?.addOnSuccessListener(OnSuccessListener { </span>
@@ -138,11 +138,11 @@ description: 15
 </aside>
 
 <p><strong>13. Locate following line to stop the analyzer after detection to release detection resources</strong></p>
-<pre><div id="copy-button24" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO After the detection is complete, stop the analyzer to release detection resources.
+<pre><div id="copy-button26" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO After the detection is complete, stop the analyzer to release detection resources.
 <span class="pln">
 </span></code></pre>
 
 <p><strong>14. Stop the analyzer if detection is complete for releasing detection resources</strong></p>
-<pre><div id="copy-button25" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
+<pre><div id="copy-button27" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
 <span class="pln">analyzer.stop()</span>
 <span class="pln"></span></code>
