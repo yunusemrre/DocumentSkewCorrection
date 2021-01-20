@@ -14,66 +14,8 @@ description: 15
 <p><strong>2. Locate TODO for creating ML frame object by using Bitmap and complete the code.</strong></p>
 <pre><div id="copy-button11" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO Create an MLFrame object by using android.graphics.Bitmap for the analyzer to detect images
 <span class="kwd">val </span><span class="pln">frame = </span><span class="typ">MLFrame</span><span class="pln">.fromBitmap(bitmapImage)</span>
-</span></code></pre>
-<p>Description of <strong>Wise Player Factory</strong> is as following:<br></p>
-<table style="width: 100%;table-layout: fixed;">
-	<tbody><tr></tr>
-	<tr><td colspan="1" rowspan="1"><p>Parameter</p>
-	</td><td colspan="1" rowspan="1"><p>Type:</p>
-	</td><td colspan="1" rowspan="1"><p>Mandatory or Not</p>
-	</td><td colspan="1" rowspan="1"><p>Description</p>
-	</td></tr>
-	<tr><td colspan="1" rowspan="1"><p>context</p>
-	</td><td colspan="1" rowspan="1"><p>Context</p>
-	</td><td colspan="1" rowspan="1"><p>M</p>
-	</td><td colspan="1" rowspan="1"><p>Android context object, which is not set to null.</p>
-	</td></tr>
-	<tr><td colspan="1" rowspan="1"><p>options</p>
-	</td><td colspan="1" rowspan="1"><p>Integer</p>
-	</td><td colspan="1" rowspan="1"><p>M</p>
-	</td><td colspan="1" rowspan="1"><p>Instance of the WisePlayer factory class initialization option <a href="https://developer.huawei.com/consumer/en/doc/HMSCore-References-V5/wpf-options-0000001050439397-V5" target="_blank">WisePlayerFactoryOptions</a></p>
-	</td></tr>
-	<tr><td colspan="1" rowspan="1"><p>callback</p>
-	</td><td colspan="1" rowspan="1"><p>Object</p>
-	</td><td colspan="1" rowspan="1"><p>M</p>
-	</td><td colspan="1" rowspan="1"><p>Instance of the <a href="https://developer.huawei.com/consumer/en/doc/HMSCore-References-V5/init-factory-callback-0000001050199187-V5" target="_blank">InitFactoryCallback API</a> for initializing the WisePlayer factory class.</p>
-	</td></tr>
-</tbody></table>
-<p><strong>3. Locate following line and set the EditTexts Urls in MainActivity to play related buttons</strong></p>
-<pre><div id="copy-button12" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>   // TODO Set video Url or Urls
-<span class="pln">
-</span></code></pre>
-<p><strong>4.Set the EditTexts Urls </strong></p>
-<pre><div id="copy-button13" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code> edtUrl.setText(resources.getString(R.string.single_url))
- edtMultipleUrl.setText(resources.getString(R.string.multiple_url))
- <span class="pln">
-</span></code></pre>
-<p><strong>5. Locate following line and create Wise Player Instance in WisePlayerInit Object. </strong></p>
-<pre><div id="copy-button14" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>  // TODO Initializing of Wise Player Instance
-<span class="pln">
-</span></code></pre>
-<p><strong>6. Create Wise Player Instance</strong></p>
-<pre><div id="copy-button15" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>  return wisePlayerFactory.createWisePlayer()
-<span class="pln">
-</span></code></pre>
-<aside class="special">
-	<p><strong>Note: Frame Layout is necessary for SurfaceView to display videos, otherwise only audio will be listened</strong></p>
-</aside>
-<br><img style="width: 400.00px" src="https://raw.githubusercontent.com/bekiryavuzkoc/testRepo/gh-pages/assets/framelayout.PNG" onclick="imageclick(src)">
-<p><strong>7. Locate following line in Play Activity.</strong></p>
-<pre><div id="copy-button17" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>  //TODO Setting the Listeners
-<span class="pln">
-</span></code></pre>
-<p><strong>8. Set listeners in Play Activity.</strong></p>
-<pre><div id="copy-button18" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>  player.setReadyListener(this)
-  player.setErrorListener(this)
-  player.setEventListener(this)
-  player.setResolutionUpdatedListener(this)
-  player.setLoadingListener(this)
-  player.setPlayEndListener(this)
-  player.setSeekEndListener(this)
-  <span class="pln">
-</span></code></pre>
+</code></pre>
+
 <p><strong>9. Locate following line in Play Activity.</strong></p>
 <pre><div id="copy-button19" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code> //TODO Callback Listener
 <span class="pln">
