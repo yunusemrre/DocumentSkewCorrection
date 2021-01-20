@@ -3,8 +3,8 @@ title: Create Wiseplayer and Play Video
 description: 15
 ---
 
-<p><strong>1. Locate following line to create the Wise Player Factory instance in WisePlayerInit Object.</strong></p>
-<pre><div id="copy-button10" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>    //TODO Initializing of Wise Player Factory
+<p><strong>1. Locate following line for creating text box detection/correction analyzer and complete the code.</strong></p>
+<pre><div id="copy-button10" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//<mark>TODO Initializing of Wise Player Factory</mark>
 <span class="pln">
 </span></code></pre>
 <p><strong>2. Create the Wise Player Factory instance</strong></p>
