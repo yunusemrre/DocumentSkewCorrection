@@ -5,8 +5,6 @@ description: 1
 
 <p>Well done. You have successfully completed this Codelab and learned:</p>
 <ul>
-<li>How to initialize Wise Player</li>
-<li>How to use Video Kit SDK features</li>
-<li>How to use Seekbar View</li>
-<li>How to implement Handler</li>
+<li>How to integrate to Document Skew Correction feature</li>
+<li>How to detect document from image and correct it</li>
 </ul>
