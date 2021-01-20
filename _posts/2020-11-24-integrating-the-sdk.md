@@ -79,8 +79,8 @@ For details, see <a href="https://developer.huawei.com/consumer/en/doc/HMSCore-G
 </span></code></pre>
   </li>
 			<li>Check if AGC plugin is applied. If not enable the AGC plug-in in the app level <strong>build.gradle</strong> file.
-      <pre><div id="copy-button4" class="copy-btn" title="Copy" onclick="copyCode(this.id)"><code><span class="pln">apply plugin: 'com.huawei.agconnect'
-      </span></code></div></pre>
+      <pre><div id="copy-button4" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code><span class="pln">apply plugin: 'com.huawei.agconnect'
+      </span></code></pre>
   </li>
 </ul>  
 <p><strong>3. Configure obfuscation scripts.</strong></p>
