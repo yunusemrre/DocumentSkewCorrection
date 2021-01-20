@@ -66,17 +66,17 @@ description: 15
 </code></pre>
 
 <p><strong>8. Locate TODO to get first result if detection is success and complete the code.</strong></p>
-<pre><div id="copy-button19" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
+<pre><div id="copy-button18" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
 <span class="kwd">val </span><span class="pln">detectResult : MLDocumentSkewDetectResult = detectTask.get(0) </span>
 <span class="pln">
 </span></code></pre>
 
 <p><strong>9. BASLIK GELECEK</strong></p>
-<pre><div id="copy-button20" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO Obtain the coordinate data for the four vertices of the text box and create an MLDocumentSkewCorrectionCoordinateInput object
+<pre><div id="copy-button19" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO Obtain the coordinate data for the four vertices of the text box and create an MLDocumentSkewCorrectionCoordinateInput object
 </code></pre>
 
 <p><strong>10. Locate TODO to obtain the coordinates of detection result and complete the code to create MLDocumentSkewCorrectionCoordinateInput result.</strong></p>
-<pre><div id="copy-button21" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
+<pre><div id="copy-button20" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
 <span class="kwd">val </span><span class="pln">leftTop : Point = detectResult.</span><span class="kwd">leftTopPosition</span>
 <span class="kwd">val </span><span class="pln">rightTop : Point = detectResult.</span><span class="kwd">rightTopPosition</span>
 <span class="kwd">val </span><span class="pln">leftBottom : Point = detectResult.</span><span class="kwd">leftBottomPosition</span>
@@ -99,16 +99,16 @@ description: 15
 </aside>
 
 <p><strong>11. BASLIK GELECEK</strong></p>
-<pre><div id="copy-button22" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO Call the syncDocumentSkewCorrect synchronous method to correct the text box.
+<pre><div id="copy-button21" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO Call the syncDocumentSkewCorrect synchronous method to correct the text box.
 </code></pre>
 
 <p><strong>12. Locate TODO to call synchronized syncDocumentSkew method and complete the code to correct the text box.</strong></p>
-<pre><div id="copy-button23" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
+<pre><div id="copy-button22" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
 <span class="kwd">val </span><span class="pln">correct: SparseArray<</span><span class="kwd">MLDocumentSkewCorrectionResult</span><span class="pln">> = analyzer.syncDocumentSkewCorrect(frame,coordinateData)</span>
 
-<span class="kwd">if</span><span class="pln"> (correct.get(0)?. </span><span class="kwd>resultCode</span><span class="pln"> == </span><span class="typ">MLDocumentSkewCorrectionConstant></span><span class="pln>.</span><span class="kwd>SUCCESS</span><span class="pln">) { </span>
+<span class="kwd">if</span><span class="pln"> (correct.get(0)?. </span><span class="kwd">resultCode</span><span class="pln"> == </span><span class="typ">MLDocumentSkewCorrectionConstant></span><span class="pln">.</span><span class="kwd">SUCCESS</span><span class="pln">) { </span>
   <span class="pln"> // Correction success & Get bitmap. </span>
-  <span class="kwd">val</span><span class="pln"> correctedBitmap : </span><span class="typ">Bitmap</span><span class="pln> correct.get(0).</span><span class="kwd">corrected</span>
+  <span class="kwd">val</span><span class="pln"> correctedBitmap : </span><span class="typ">Bitmap</span><span class="pln"> correct.get(0).</span><span class="kwd">corrected</span>
 <span class="pln">}</span><span class="kwd"> else </span><span class="pln">{</span>
   <span class="pln"> // Correction failure.</span>
 <span class="pln">}</span>
@@ -117,8 +117,8 @@ description: 15
 <aside class="special">
   <p><strong>Note</strong>: If text box needs to be corrected asynchronously, following way can be used. </p>
 </aside>
+<pre><div id="copy-button23" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
+<span class="kwd">val </span><span class="pln">correctAsync : Task<</span><span class="typ">MLDocumentSkewCorrectionResult</span><span class="pln">> = analyzer.asyncDocumentSkewCorrect(frame,coordinateData)</span>
 
+<span class="pln"></span></code></pre>
 
-
-<span class="pln">
-</span></code></pre>
