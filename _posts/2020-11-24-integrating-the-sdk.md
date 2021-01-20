@@ -120,11 +120,10 @@ For details, see
 <a href="https://developer.huawei.com/consumer/en/doc/HMSCore-Guides-V5/overview-sdk-0000001051070278-V5" target="_blank">Full SDK and base SDK in Overview</a>.
 </p>
 <ul>
-  <li>Add a dependency package to the 
-    <strong>dependencies</strong> section in the 
-    <strong>build.gradle</strong> file.
+  <li>Verify if Document Skew Correction dependency that selected integration mode has been added. If not select one of these two mode and add it as following the <strong>dependencies</strong> section in the app level <strong>build.gradle</strong> file. 
     <pre>
       <div id="copy-button4" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div>
+      <p>1. Mode 1: Full SDK Integration (Recommended)</p>
       <code>
         <span class="pln">dependencies </span>
         <span class="pun">{</span>
