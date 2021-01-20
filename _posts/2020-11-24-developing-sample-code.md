@@ -10,8 +10,8 @@ description: 15
 
 <p><strong>2. Initialize text box detection/correction analyzer.</strong></p>
 <pre><div id="copy-button11" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
-<span class="kwd">val </span><span class="pln">settings = </span><span class="typ">MLDocumentSkewCorrectionAnalyzerSetting</span><span class="pln">.Factory().create()</span>
-<span class="kwd">val </span><span class="pln">analyzer = </span><span class="typ">MLDocumentSkewCorrectionAnalyzerFactory</span><span class="pln">.getInstance().getDocumentSkewCorrectionAnalyzer </span><span class="pun">{</span>
+<span class="kwd">val</span><span class="pln"> settings = </span><span class="typ">MLDocumentSkewCorrectionAnalyzerSetting</span><span class="pln">.Factory().create()</span>
+<span class="kwd">val</span><span class="pln"> analyzer = </span><span class="typ">MLDocumentSkewCorrectionAnalyzerFactory</span><span class="pln">.getInstance().getDocumentSkewCorrectionAnalyzer </span><span class="pun">{</span>
   <span class="pln">setting</span>
 <span class="pun">}</span>
 <span class="pln">
@@ -24,7 +24,7 @@ description: 15
 
 <p><strong>4. Initialize ML frame object by using Bitmap.</strong></p>
 <pre><div id="copy-button13" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
-<span class="kwd">val </span><span class="pln">frame = </span><span class="typ">MLFrame</span><span class="pln">.fromBitmap(bitmapImage)</span>
+<span class="kwd">val</span><span class="pln"> frame = </span><span class="typ">MLFrame</span><span class="pln">.fromBitmap(bitmapImage)</span>
 <span class="pln"></span>
 </code></pre>
 <aside class="special">
@@ -41,7 +41,7 @@ description: 15
 
 <p><strong>6. Create analyseFrame method and complete the code for detecting the text box synchronously.</strong></p>
 <pre><div id="copy-button15" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
-<span class="kwd">val </span><span class="pln">detectTask = SparseArray<</span><span class="typ">MLDocumentSkewDetectResult</span><span class="pln">> = analyzer.analyseFrame(frame)</span>
+<span class="kwd">val</span><span class="pln"> detectTask = SparseArray<</span><span class="typ">MLDocumentSkewDetectResult</span><span class="pln">> = analyzer.analyseFrame(frame)</span>
 <span class="kwd">if </span><span class="pln">(detectTask.get(0).</span><span class="typ">resultCode</span><span class="pln"> == MLDocumentSkewCorrectionConstant.</span><span class="type">SUCCESS</span><span>)</span> <span class="pun">{</span>
   <span class="pln">//Detection Success</span>
 <span class="pun">} else </span><span class="pun">{</span>
@@ -53,7 +53,7 @@ description: 15
 <p><strong>Note:</strong> If text box needs to be detected asynchronously, following way can be used.</p>
 </aside>
 <pre><div id="copy-button16" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO Call the analyseFrame asynchronous method to detect the text box.
-<span class="kwd">val </span><span class="pln">detectTaskAsync = Task<</span><span class="typ">MLDocumentSkewDetectResult</span><span class="pln">> = analyzer.asyncDocumentSkewDetect(frame)</span>
+<span class="kwd">val</span><span class="pln"> detectTaskAsync = Task<</span><span class="typ">MLDocumentSkewDetectResult</span><span class="pln">> = analyzer.asyncDocumentSkewDetect(frame)</span>
 <span class="pln">detectTaskAsync?.addonSuccessListener (OnSuccessListener() </span><span class="pun">{ </span>
   <span class="pln">//Detection Success</span>
 <span class="pun">})</span><span class="pun">{</span>
@@ -71,7 +71,7 @@ description: 15
 
 <p><strong>8. Get first result if detection is success</strong></p>
 <pre><div id="copy-button18" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
-<span class="kwd">val </span><span class="pln">detectResult : MLDocumentSkewDetectResult = detectTask.get(0) </span>
+<span class="kwd">val</span><span class="pln"> detectResult : MLDocumentSkewDetectResult = detectTask.get(0) </span>
 <span class="pln">
 </span></code></pre>
 
@@ -82,19 +82,19 @@ description: 15
 
 <p><strong>10. Obtain the coordinates of detection result and complete the code to create MLDocumentSkewCorrectionCoordinateInput result.</strong></p>
 <pre><div id="copy-button20" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
-<span class="kwd">val </span><span class="pln">leftTop : Point = detectResult.</span><span class="kwd">leftTopPosition</span>
-<span class="kwd">val </span><span class="pln">rightTop : Point = detectResult.</span><span class="kwd">rightTopPosition</span>
-<span class="kwd">val </span><span class="pln">leftBottom : Point = detectResult.</span><span class="kwd">leftBottomPosition</span>
-<span class="kwd">val </span><span class="pln">rightBottom : Point = detectResult.</span><span class="kwd">rightBottomPosition</span>
+<span class="kwd">val</span><span class="pln"> leftTop : Point = detectResult.</span><span class="kwd">leftTopPosition</span>
+<span class="kwd">val</span><span class="pln"> rightTop : Point = detectResult.</span><span class="kwd">rightTopPosition</span>
+<span class="kwd">val</span><span class="pln"> leftBottom : Point = detectResult.</span><span class="kwd">leftBottomPosition</span>
+<span class="kwd">val</span><span class="pln"> rightBottom : Point = detectResult.</span><span class="kwd">rightBottomPosition</span>
 
-<span class="kwd">val </span><span class="pln">coordinates : MutableList<</span><span class="kwd">Point</span><span class="pln">> = <i>mutableListOf</i>()</span>
+<span class="kwd">val</span><span class="pln"> coordinates : MutableList<</span><span class="kwd">Point</span><span class="pln">> = <i>mutableListOf</i>()</span>
 
 <span class="pln">coordinates.add(leftTop)</span>
 <span class="pln">coordinates.add(rightTop)</span>
 <span class="pln">coordinates.add(leftBottom)</span>
 <span class="pln">coordinates.add(rightBottom)</span>
 
-<span class="kwd">val </span><span class="pln">coordinateData = </span><span class="typ">MLDocumentSkewCorrectionCoordinateInput(</span><span class="pln">coordinates</span><span class="typ">)</span>
+<span class="kwd">val</span><span class="pln"> coordinateData = </span><span class="typ">MLDocumentSkewCorrectionCoordinateInput(</span><span class="pln">coordinates</span><span class="typ">)</span>
 
 <span class="pln">
 </span></code></pre>
@@ -109,7 +109,7 @@ description: 15
 
 <p><strong>12. Call synchronized syncDocumentSkew method and complete the code to correct the text box.</strong></p>
 <pre><div id="copy-button22" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
-<span class="kwd">val </span><span class="pln">correct: SparseArray<</span><span class="kwd">MLDocumentSkewCorrectionResult</span><span class="pln">> = analyzer.syncDocumentSkewCorrect(frame,coordinateData)</span>
+<span class="kwd">val</span><span class="pln"> correct: SparseArray<</span><span class="kwd">MLDocumentSkewCorrectionResult</span><span class="pln">> = analyzer.syncDocumentSkewCorrect(frame,coordinateData)</span>
 
 <span class="kwd">if</span><span class="pln"> (correct.get(0)?. </span><span class="kwd">resultCode</span><span class="pln"> == </span><span class="typ">MLDocumentSkewCorrectionConstant></span><span class="pln">.</span><span class="kwd">SUCCESS</span><span class="pln">) { </span>
   <span class="pln"> // Correction success & Get bitmap. </span>
@@ -123,7 +123,7 @@ description: 15
   <p><strong>Note</strong>: If text box needs to be corrected asynchronously, following way can be used. </p>
 </aside>
 <pre><div id="copy-button23" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
-<span class="kwd">val </span><span class="pln">correctAsync : Task<</span><span class="typ">MLDocumentSkewCorrectionResult</span><span class="pln">> = analyzer.asyncDocumentSkewCorrect(frame,coordinateData)</span>
+<span class="kwd">val</span><span class="pln"> correctAsync : Task<</span><span class="typ">MLDocumentSkewCorrectionResult</span><span class="pln">> = analyzer.asyncDocumentSkewCorrect(frame,coordinateData)</span>
 
 <span class="pln">correctAsync?.addOnSuccessListener(OnSuccessListener { </span>
   <span class="pln"> //Correction Success</span>
