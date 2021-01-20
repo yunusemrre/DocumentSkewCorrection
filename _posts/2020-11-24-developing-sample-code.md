@@ -16,12 +16,12 @@ description: 15
 <pre><div id="copy-button11" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO Create an MLFrame object by using android.graphics.Bitmap for the analyzer to detect images
 <span class="kwd">val </span><span class="pln">frame = </span><span class="typ">MLFrame</span><span class="pln">.fromBitmap(bitmapImage)</span>
 </code></pre>
-<aside>
+<aside class="special">
   <lu>
     <li>JPG, JPEG and PNG are supperted image resources.</li>
     <li>It is recommended that the image size be within the range of 320x320 px to 1920x1920 px.</li>
   </lu>
-<aside>
+</aside>
 <p><strong>3. Locate TODO for creating analyseFrame method and complete the code for detecting the text box synchronously.</strong></p>
 <pre><div id="copy-button12" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO Call the analyseFrame synchronous method to detect the text box.
 <span class="kwd">val </span><span class="pln">detectTask = SparseArray<</span><span class="typ">MLDocumentSkewDetectResult</span><span class="pln">> = analyzer.analyseFrame(frame)</span>
@@ -32,7 +32,9 @@ description: 15
 <span class="pun">} else </span>
 <span class="pln"></span>
 </code></pre>
-
+<aside class = "special">
+<p><strong>Note:</strong> If text box needs to be detected asynchronously, following way can be used.</p>
+</aside>
 <p><strong>9. Locate following line in Play Activity.</strong></p>
 <pre><div id="copy-button19" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code> //TODO Callback Listener
 <span class="pln">
