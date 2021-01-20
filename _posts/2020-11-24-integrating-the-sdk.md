@@ -75,7 +75,7 @@ For details, see <a href="https://developer.huawei.com/consumer/en/doc/HMSCore-G
 	      </span><span class="pun">...</span><span class="pln">
 	    </span><span class="pun">}</span><span class="pln">
     </span><span class="pun">...</span><span class="pln">
-  <span class="str">minSdkVersion 19</span><span class="pln">
+  </span><span class="pun">}</span><span class="pln">
 </span></code></pre>
 	</li>
 </ul>
