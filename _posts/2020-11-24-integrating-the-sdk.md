@@ -118,3 +118,4 @@ For details, see <a href="https://developer.huawei.com/consumer/en/doc/HMSCore-G
 </span><span class="tag">&lt;uses-permission</span><span class="pln"> </span><span class="atn">android:name</span><span class="pun">=</span><span class="atv">"android.permission.WRITE_EXTERNAL_STORAGE"</span><span class="tag">/&gt;</span><span class="pln">
 </span></code></pre>
 <p><strong>Step 4</strong>: In the Android Studio window, choose <strong>File</strong> &gt; <strong>Sync Project with Gradle Files</strong> to synchronize the project.</p>
+<p><strong>Step 5</strong>: Complete the essentials in code; locate and open the <strong>MainActivityPresenter.kt</strong></p>
