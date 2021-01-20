@@ -3,9 +3,9 @@ title: "Introduction"
 description: 1
 ---
 
-<huawei-codelab-about codelab-title="Huawei ML Kit - Document Skew Correction" authors="Huawei Codelab Team">
+<huawei-codelab-about codelab-title="Huawei ML Kit Document Skew Correction" authors="Huawei Codelab Team">
 <div class="codelab-title">
-<div class="token">ML Kit - Document Skew Correction</div></div>
+<div class="token">ML Kit Document Skew Correction</div></div>
 <div class="about-card">
 <h2 class="title">About this codelab</h2>
 <div class="authors"><i class="material-icons">account_circle</i>Written by Huawei Codelab Team</div></div>
