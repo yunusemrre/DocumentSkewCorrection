@@ -33,11 +33,11 @@ description: 15
 </aside>
 
 <p><strong>5. BASLIK GELECEK</strong></p>
-<pre><div id="copy-button12" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO Call the analyseFrame synchronous method to detect the text box.
+<pre><div id="copy-button14" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO Call the analyseFrame synchronous method to detect the text box.
 </code></pre>
 
 <p><strong>6. Locate TODO for creating analyseFrame method and complete the code for detecting the text box synchronously.</strong></p>
-<pre><div id="copy-button13" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
+<pre><div id="copy-button15" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
 <span class="kwd">val </span><span class="pln">detectTask = SparseArray<</span><span class="typ">MLDocumentSkewDetectResult</span><span class="pln">> = analyzer.analyseFrame(frame)</span>
 <span class="kwd">if </span><span class="pln">(detectTask.get(0).</span><span class="typ">resultCode</span><span class="pln"> == MLDocumentSkewCorrectionConstant.</span><span class="type">SUCCESS</span><span>)</span> <span class="pun">{</span>
   <span class="pln">//Detection Success</span>
@@ -49,7 +49,7 @@ description: 15
 <aside class = "special">
 <p><strong>Note:</strong> If text box needs to be detected asynchronously, following way can be used.</p>
 </aside>
-<pre><div id="copy-button14" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO Call the analyseFrame asynchronous method to detect the text box.
+<pre><div id="copy-button16" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO Call the analyseFrame asynchronous method to detect the text box.
 <span class="kwd">val </span><span class="pln">detectTaskAsync = Task<</span><span class="typ">MLDocumentSkewDetectResult</span><span class="pln">> = analyzer.asyncDocumentSkewDetect(frame)</span>
 <span class="pln">detectTaskAsync?.addonSuccessListener (OnSuccessListener() </span><span class="pun">{ </span>
   <span class="pln">//Detection Success</span>
@@ -61,14 +61,43 @@ description: 15
 </code></pre>
 <p>When the return code is success, the coordinates of the four vertices of text box are returned.</p>
 
-<p><strong>4. Locate TODO to get first result if detection is success and complete the code.</strong></p>
-<pre><div id="copy-button14" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO Create a text box detection/correction analyzer.
-<span class="kwd">val </span><span class="pln">settings = </span><span class="typ">MLDocumentSkewCorrectionAnalyzerSetting</span><span class="pln">.Factory().create()</span>
-<span class="kwd">val </span><span class="pln">analyzer = </span><span class="typ">MLDocumentSkewCorrectionAnalyzerFactory</span><span class="pln">.getInstance().getDocumentSkewCorrectionAnalyzer </span><span class="pun">{</span>
-  <span class="pln">setting</span>
-<span class="pun">}</span>
+<p><strong>7. BASLIK GELECEK</strong></p>
+<pre><div id="copy-button17" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO If detection is success get detection result.
+</code></pre>
+
+<p><strong>8. Locate TODO to get first result if detection is success and complete the code.</strong></p>
+<pre><div id="copy-button19" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
+<span class="kwd">val </span><span class="pln">detectResult : MLDocumentSkewDetectResult = detectTask.get(0) </span>
 <span class="pln">
 </span></code></pre>
+
+<p><strong>9. BASLIK GELECEK</strong></p>
+<pre><div id="copy-button20" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO Obtain the coordinate data for the four vertices of the text box and create an MLDocumentSkewCorrectionCoordinateInput object
+</code></pre>
+
+<p><strong>10. Locate TODO to obtain the coordinates of detection result and complete the code to create MLDocumentSkewCorrectionCoordinateInput result.</strong></p>
+<pre><div id="copy-button21" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
+<span class="kwd">val </span><span class="pln">leftTop : Point = detectResult.</span><span class="kwd">leftTopPosition</span>
+<span class="kwd">val </span><span class="pln">rightTop : Point = detectResult.</span><span class="kwd">rightTopPosition</span>
+<span class="kwd">val </span><span class="pln">leftBottom : Point = detectResult.</span><span class="kwd">leftBottomPosition</span>
+<span class="kwd">val </span><span class="pln">rightBottom : Point = detectResult.</span><span class="kwd">rightBottomPosition</span>
+
+<span class="kwd">val </span><span class="pln">coordinates : MutableList<</span><span class="kwd">Point</span><span class="pln">> = <i>mutableListOf</i>()</span>
+
+<span class="pln">coordinates.add(leftTop)</span>
+<span class="pln">coordinates.add(rightTop)</span>
+<span class="pln">coordinates.add(leftBottom)</span>
+<span class="pln">coordinates.add(rightBottom)</span>
+
+<span class="kwd">val </span><span class="pln">coordinateData = </span><span class="typ">MLDocumentSkewCorrectionCoordinateInput(</span><span class="pln">coordinates</span><span class="type">)</span>
+
+<span class="pln">
+</span></code></pre>
+
+<aside class="special">
+  <p>Data contains coordinate of the four vertices in the text box. Upper left vertex is start point and add the upper left vertex, upper right vertex, lower right vertex and lower left vertex to List object.</p>
+</aside>
+
 
 <p><strong>9. Locate following line in Play Activity.</strong></p>
 <pre><div id="copy-button19" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code> //TODO Callback Listener
