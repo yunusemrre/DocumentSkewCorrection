@@ -10,7 +10,8 @@ description: 5
       <span class="pun"><</span><span class="pln">meta-data</span><span class="pun">></span>
         <span class="pln">...</span>
         <span class="pln">android:name="com.huawei.hms.ml.DEPENDENCY"</span>
-        <span class="pln">android:value= "dsc" /></span>
+        <span class="pln">android:value= "dsc"</span>
+        <span class="pun"><</span><span class="pln">/meta-data</span><span class="pun"><</span>
         <span class="pln">...</span>
     <span class="pln">...</span>
 <span class="pun"><</span>/application<span class="pun">></span>
