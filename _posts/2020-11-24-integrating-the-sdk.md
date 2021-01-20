@@ -20,12 +20,12 @@ description: 5
 	</span></code></pre>
 	</li>
 	<li>Go to <strong>buildscript</strong> &gt; <strong>repositories</strong> and configure the Maven repository address for the HMS Core SDK.<pre><div id="copy-button2" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code><span class="pln">buildscript </span><span class="pun">{</span><span class="pln">
-		repositories </span><span class="pun">{</span><span class="pln">
-		   maven </span><span class="pun">{</span><span class="pln">url </span><span class="str">'https://developer.huawei.com/repo/'</span><span class="pun">}</span><span class="pln">
-			</span><span class="pun">...</span><span class="pln">
-		</span><span class="pun">}</span><span class="pln">
-		</span><span class="pun">...</span><span class="pln">
-	</span><span class="pun">}</span><span class="pln">
+		  repositories </span><span class="pun">{</span><span class="pln">
+		    maven </span><span class="pun">{</span><span class="pln">url </span><span class="str">'https://developer.huawei.com/repo/'</span><span class="pun">}</span><span class="pln">
+			  </span><span class="pun">...</span><span class="pln">
+		  </span><span class="pun">}</span><span class="pln">
+		  </span><span class="pun">...</span><span class="pln">
+	  </span><span class="pun">}</span><span class="pln">
 	</span></code></pre>
 	</li>
 	<li>Go to <strong>buildscript</strong> &gt; <strong>dependencies</strong> and add build dependencies.<pre><div id="copy-button3" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code><span class="pln">buildscript </span><span class="pun">{</span><span class="pln">
