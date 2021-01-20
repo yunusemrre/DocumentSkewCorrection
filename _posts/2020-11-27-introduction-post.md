@@ -3,7 +3,7 @@ title: "Introduction"
 description: 1
 ---
 
-<huawei-codelab-about codelab-title="Huawei Video Kit" last-updated="2020-12-09T13:20:13-07:00" authors="Huawei Codelab Team">
+<huawei-codelab-about codelab-title="Huawei ML Kit - Document Skew Correction" authors="Huawei Codelab Team">
 <div class="codelab-title">
 <div class="token">Huawei Video Kit</div></div>
 <div class="about-card">
