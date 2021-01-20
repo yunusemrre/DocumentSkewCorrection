@@ -12,6 +12,7 @@ description: 5
         <span class="pln">android:name="com.huawei.hms.ml.DEPENDENCY"</span>
         <span class="pln">android:value= "dsc" /></span>
         <span class="pun">...</span><span class="pln"></span>
+    <span class="pun">...</span><span class="pln"></span>
 <span class="str"><span class="pun"><</span>/application<span class="pun">></span></span><span class="pln">
   </code></pre>
   </li>
