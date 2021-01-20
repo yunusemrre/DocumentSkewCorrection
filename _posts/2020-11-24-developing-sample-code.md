@@ -89,7 +89,7 @@ description: 15
 <span class="pln">coordinates.add(leftBottom)</span>
 <span class="pln">coordinates.add(rightBottom)</span>
 
-<span class="kwd">val </span><span class="pln">coordinateData = </span><span class="typ">MLDocumentSkewCorrectionCoordinateInput(</span><span class="pln">coordinates</span><span class="type">)</span>
+<span class="kwd">val </span><span class="pln">coordinateData = </span><span class="typ">MLDocumentSkewCorrectionCoordinateInput(</span><span class="pln">coordinates</span><span class="typ">)</span>
 
 <span class="pln">
 </span></code></pre>
@@ -98,68 +98,26 @@ description: 15
   <p>Data contains coordinate of the four vertices in the text box. Upper left vertex is start point and add the upper left vertex, upper right vertex, lower right vertex and lower left vertex to List object.</p>
 </aside>
 
+<p><strong>11. BASLIK GELECEK</strong></p>
+<pre><div id="copy-button22" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO Call the syncDocumentSkewCorrect synchronous method to correct the text box.
+</code></pre>
 
-<p><strong>9. Locate following line in Play Activity.</strong></p>
-<pre><div id="copy-button19" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code> //TODO Callback Listener
+<p><strong>12. Locate TODO to call synchronized syncDocumentSkew method and complete the code to correct the text box.</strong></p>
+<pre><div id="copy-button23" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
+<span class="kwd">val </span><span class="pln">correct: SparseArray<</span><span class="kwd">MLDocumentSkewCorrectionResult</span><span class="pln">> = analyzer.syncDocumentSkewCorrect(frame,coordinateData)</span>
+
+<span class="kwd">if</span><span class="pln"> (correct.get(0)?.</span><span class="kwd>resultCode</span><span class="pln"> == </span><span class="typ">MLDocumentSkewCorrectionConstant></span><span class="pln>.</span><span class="kwd>SUCCESS</span><span class="pln">) { </span>
+  <span class="pln"> // Correction success & Get bitmap. </span>
+  <span class="kwd">val</span><span class="pln"> correctedBitmap : </span><span class="typ">Bitmap</span><span class="pln> correct.get(0).</span><span class="kwd">corrected</span>
+<span class="pln">}</span><span class="kwd"> else </span><span class="pln">{</span>
+  <span class="pln"> // Correction failure.</span>
+<span class="pln">}</span>
 <span class="pln">
 </span></code></pre>
-<p><strong>10. Set the Callback Listener in Play Activity.</strong></p>
-<pre><div id="copy-button20" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>  surfaceView.holder.addCallback(this)
-<span class="pln">
-</span></code></pre>
-<p><strong>11. Locate following line in Play Activity.</strong></p>
-<pre><div id="copy-button21" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code> //TODO Callback Listener
-<span class="pln">
-</span></code></pre>
-<p><strong>12. Set the Seekbar Listener in Play Activity.</strong></p>
-<pre><div id="copy-button22" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>  seekBar.setOnSeekBarChangeListener(this)
-<span class="pln">
-</span></code></pre>
-<p><strong>13. Locate following line in Play Activity.</strong></p>
-<pre><div id="copy-button23" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>  //TODO Starting the Player
-	<span class="pln">
-</span></code></pre>
-<p><strong>14. Start Wise Player in Play Activity.</strong></p>
-<pre><div id="copy-button24" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>  player?.start()
-<span class="pln">
-</span></code></pre>
-<p><strong>15. Locate following line in Play Activity. </strong></p>
-<pre><div id="copy-button25" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>  //TODO Surface Change
-<span class="pln">
-</span></code></pre>
-<p><strong>16. Set surface change to Wise Player.</strong></p>
-<pre><div id="copy-button26" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>  player.setSurfaceChange()
-<span class="pln">
-</span></code></pre>
-<p><strong>17. Locate following line in Play Activity. </strong></p>
-<pre><div id="copy-button27" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>  //TODO Surface Destroy
-<span class="pln">
-</span></code></pre>
-<p><strong>18. Suspend the Wise Player if surface is destroyed.</strong></p>
-<pre><div id="copy-button28" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>  player.suspend()
-<span class="pln">
-</span></code></pre>
-<p><strong>19. Locate following line in Play Activity. </strong></p>
-<pre><div id="copy-button29" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>  //TODO Surface Create
-<span class="pln">
-</span></code></pre>
-<p><strong>20. Resume Wise Player with the current time when app is sent to foreground.</strong></p>
-<pre><div id="copy-button30" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>  player.setView(surfaceView)
-  player.resume(PlayerConstants.ResumeType.KEEP)
-<span class="pln">
-</span></code></pre>
-<p><strong>21. Locate following line in Play Activity.</strong></p>
-<pre><div id="copy-button31" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>  //TODO Release Wise Player
-<span class="pln">
-</span></code></pre>
-<p><strong>22. Release Wise Player and listeners in Play Activity. </strong></p>
-<pre><div id="copy-button32" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>  player.setErrorListener(null)
-  player.setEventListener(null)
-  player.setResolutionUpdatedListener(null)
-  player.setReadyListener(null)
-  player.setLoadingListener(null)
-  player.setPlayEndListener(null)
-  player.setSeekEndListener(null)
-  player.release()
+
+<aside class="special">
+  <p><strong>Note</strong>: If text box needs to be corrected asynchronously, following way can be used. </p>
+</aside>
+
 <span class="pln">
 </span></code></pre>
