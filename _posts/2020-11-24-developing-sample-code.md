@@ -16,10 +16,23 @@ description: 15
 <pre><div id="copy-button11" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO Create an MLFrame object by using android.graphics.Bitmap for the analyzer to detect images
 <span class="kwd">val </span><span class="pln">frame = </span><span class="typ">MLFrame</span><span class="pln">.fromBitmap(bitmapImage)</span>
 </code></pre>
-<lu>
-  <li>JPG, JPEG and PNG are supperted image resources.</li>
-  <li>It is recommended that the image size be within the range of 320x320 px to 1920x1920 px.</li>
-</lu>
+<aside>
+  <lu>
+    <li>JPG, JPEG and PNG are supperted image resources.</li>
+    <li>It is recommended that the image size be within the range of 320x320 px to 1920x1920 px.</li>
+  </lu>
+<aside>
+<p><strong>3. Locate TODO for creating analyseFrame method and complete the code for detecting the text box synchronously.</strong></p>
+<pre><div id="copy-button12" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO Call the analyseFrame synchronous method to detect the text box.
+<span class="kwd">val </span><span class="pln">detectTask = SparseArray<</span><span class="typ">MLDocumentSkewDetectResult</span><span class="pln">> = analyzer.analyseFrame(frame)</span>
+<span class="kwd">if </span><span class="pln">(detectTask.get(0).</span><span class="typ">resultCode</span><span class="pln"> == MLDocumentSkewCorrectionConstant.</span><span class="type">SUCCESS</span><span>)</span) <span class="pun">{</span>
+  <span class="pln">//Detection Success</span>
+<span class="pun">} else </span><span class="pun">{</span>
+  <span class="pln">//Detection Failure</span>
+<span class="pun">} else </span>
+<span class="pln"></span>
+</code></pre>
+
 <p><strong>9. Locate following line in Play Activity.</strong></p>
 <pre><div id="copy-button19" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code> //TODO Callback Listener
 <span class="pln">
