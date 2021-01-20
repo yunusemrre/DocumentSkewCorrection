@@ -8,7 +8,7 @@ description: 2
 
 <ol type="1">
 	<li>Open the app upon installing it to your device.</li>
-	<li>Use <img style="width: 19.00px" src="https://raw.githubusercontent.com/yunusemrre/DocumentSkewCorrection/master/assets/TakePhotoPicture.PNG" onclick="imageclick(src)"> button to take photo or use <img style="width: 19.00px" src="https://raw.githubusercontent.com/yunusemrre/DocumentSkewCorrection/master/assets/SelectImageFromGalleryPicture.PNG" onclick="imageclick(src)"> button to access to your gallery and pick image. Grant necessary permissions in case system asks for it.</li>
+	<li>Use <img style="width: 50.00px" src="https://raw.githubusercontent.com/yunusemrre/DocumentSkewCorrection/master/assets/TakePhotoPicture.PNG" onclick="imageclick(src)"> button to take photo or use <img style="width: 50.00px" src="https://raw.githubusercontent.com/yunusemrre/DocumentSkewCorrection/master/assets/SelectImageFromGalleryPicture.PNG" onclick="imageclick(src)"> button to access to your gallery and pick image. Grant necessary permissions in case system asks for it.</li>
 	<li>Wait for complete detection and recreate corrected document image.</li>
 </ol>
 <img style="width: 200.00px" src="https://raw.githubusercontent.com/yunusemrre/DocumentSkewCorrection/master/assets/CorrectionSuccessImage.PNG" onclick="imageclick(src)">             <img style="width: 200.00px" src="https://raw.githubusercontent.com/yunusemrre/DocumentSkewCorrection/master/assets/CorrectionFailedImage.PNG" onclick="imageclick(src)">
