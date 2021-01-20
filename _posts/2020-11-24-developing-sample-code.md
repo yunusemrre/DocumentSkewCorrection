@@ -29,12 +29,14 @@ description: 15
   <span class="pln">//Detection Success</span>
 <span class="pun">} else </span><span class="pun">{</span>
   <span class="pln">//Detection Failure</span>
-<span class="pun">} else </span>
+<span class="pun">}</span>
 <span class="pln"></span>
 </code></pre>
 <aside class = "special">
 <p><strong>Note:</strong> If text box needs to be detected asynchronously, following way can be used.</p>
 </aside>
+
+
 <p><strong>9. Locate following line in Play Activity.</strong></p>
 <pre><div id="copy-button19" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code> //TODO Callback Listener
 <span class="pln">
