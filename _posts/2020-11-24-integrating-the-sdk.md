@@ -3,7 +3,7 @@ title: Integration the Document Skew Correction SDK
 description: 5
 ---
 
-<p>You can download the codelab project from: <a href="https://github.com/huaweicodelabs/VideoKit/tree/master/PlayVideosWithVideoKit" target="_blank">https://github.com/huaweicodelabs/VideoKit/tree/master/PlayVideosWithVideoKit</a></p>
+<p>You can download the codelab project from: <strong>URL WILL BE HERE</strong></p>
 
 <h2><strong>Creating a Project</strong></h2>
 <p><strong>Step 1</strong>: Start Android Studio.</p>
@@ -82,7 +82,7 @@ For details, see <a href="https://developer.huawei.com/consumer/en/doc/HMSCore-G
       <pre><div id="copy-button4" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code><span class="pln">apply plugin: 'com.huawei.agconnect'
       </span></code></pre>
   </li>
-  <p><strong>Note</strong>:Make sure that you configure apply plugin: 'com.huawei.agconnect' <mark>after</mark> apply plugin: 'com.android.application'</p>
+  <p><strong>Note</strong>: Make sure that you configure apply plugin: 'com.huawei.agconnect' <mark>after</mark> apply plugin: 'com.android.application'</p>
 </ul>  
 <p><strong>3. Configure obfuscation scripts.</strong></p>
 <ul>
