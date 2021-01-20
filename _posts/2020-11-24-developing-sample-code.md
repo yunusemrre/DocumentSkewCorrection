@@ -120,5 +120,23 @@ description: 15
 <pre><div id="copy-button23" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
 <span class="kwd">val </span><span class="pln">correctAsync : Task<</span><span class="typ">MLDocumentSkewCorrectionResult</span><span class="pln">> = analyzer.asyncDocumentSkewCorrect(frame,coordinateData)</span>
 
-<span class="pln"></span></code></pre>
+<span class="pln">correctAsync?.addOnSuccessListener(OnSuccessListener { </span>
+  <span class="pln"> //Correction Success</span>
+<span class="pln">})</span>
 
+<span class="pln">correctAsync?.addOnFailureListener(OnFailureListener { </span>
+  <span class="pln"> //Correction Failure</span>
+<span class="pln">})</span></code>
+
+<aside class="special">
+  <p>When the return code is success, data contains bitmap image that corrected document image.</p>
+</aside>
+
+<p><strong>13. BASLIK GELECEK</strong></p>
+<pre><div id="copy-button24" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO After the detection is complete, stop the analyzer to release detection resources.
+</code></pre>
+
+<p><strong>14. Locate TODO for stopping the analyzer if detection is complete for releasing detection resources</strong></p>
+<pre><div id="copy-button25" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
+<span class="pln">analyzer.stop()</span>
+<span class="pln"></span></code>
