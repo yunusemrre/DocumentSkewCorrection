@@ -3,7 +3,7 @@ title: Developing Sample Project
 description: 15
 ---
 
-<p><strong>1. Locate following line for creating text box detection/correction analyzer and complete the code.</strong></p>
+<p><strong>1. BASLIK GELECEK </strong></p>
 <pre><div id="copy-button10" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO Create a text box detection/correction analyzer.
 <span class="pln">
 </span></code></pre>
@@ -17,8 +17,12 @@ description: 15
 <span class="pln">
 </span></code></pre>
 
-<p><strong>2. Locate TODO for creating ML frame object by using Bitmap and complete the code.</strong></p>
+<p><strong>3. BASLIK GELECEK</strong></p>
 <pre><div id="copy-button12" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO Create an MLFrame object by using android.graphics.Bitmap for the analyzer to detect images
+</code></pre>
+
+<p><strong>4. Locate TODO for creating ML frame object by using Bitmap and complete the code.</strong></p>
+<pre><div id="copy-button13" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
 <span class="kwd">val </span><span class="pln">frame = </span><span class="typ">MLFrame</span><span class="pln">.fromBitmap(bitmapImage)</span>
 </code></pre>
 <aside class="special">
@@ -28,8 +32,12 @@ description: 15
   </lu>
 </aside>
 
-<p><strong>3. Locate TODO for creating analyseFrame method and complete the code for detecting the text box synchronously.</strong></p>
-<pre><div id="copy-button13" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO Call the analyseFrame synchronous method to detect the text box.
+<p><strong>5. BASLIK GELECEK</strong></p>
+<pre><div id="copy-button12" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO Call the analyseFrame synchronous method to detect the text box.
+</code></pre>
+
+<p><strong>6. Locate TODO for creating analyseFrame method and complete the code for detecting the text box synchronously.</strong></p>
+<pre><div id="copy-button13" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
 <span class="kwd">val </span><span class="pln">detectTask = SparseArray<</span><span class="typ">MLDocumentSkewDetectResult</span><span class="pln">> = analyzer.analyseFrame(frame)</span>
 <span class="kwd">if </span><span class="pln">(detectTask.get(0).</span><span class="typ">resultCode</span><span class="pln"> == MLDocumentSkewCorrectionConstant.</span><span class="type">SUCCESS</span><span>)</span> <span class="pun">{</span>
   <span class="pln">//Detection Success</span>
