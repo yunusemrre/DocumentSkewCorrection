@@ -106,7 +106,7 @@ description: 15
 <pre><div id="copy-button23" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
 <span class="kwd">val </span><span class="pln">correct: SparseArray<</span><span class="kwd">MLDocumentSkewCorrectionResult</span><span class="pln">> = analyzer.syncDocumentSkewCorrect(frame,coordinateData)</span>
 
-<span class="kwd">if</span><span class="pln"> (correct.get(0)?.</span><span class="kwd>resultCode</span><span class="pln"> == </span><span class="typ">MLDocumentSkewCorrectionConstant></span><span class="pln>.</span><span class="kwd>SUCCESS</span><span class="pln">) { </span>
+<span class="kwd">if</span><span class="pln"> (correct.get(0)?. </span><span class="kwd>resultCode</span><span class="pln"> == </span><span class="typ">MLDocumentSkewCorrectionConstant></span><span class="pln>.</span><span class="kwd>SUCCESS</span><span class="pln">) { </span>
   <span class="pln"> // Correction success & Get bitmap. </span>
   <span class="kwd">val</span><span class="pln"> correctedBitmap : </span><span class="typ">Bitmap</span><span class="pln> correct.get(0).</span><span class="kwd">corrected</span>
 <span class="pln">}</span><span class="kwd"> else </span><span class="pln">{</span>
@@ -114,10 +114,11 @@ description: 15
 <span class="pln">}</span>
 <span class="pln">
 </span></code></pre>
-
 <aside class="special">
   <p><strong>Note</strong>: If text box needs to be corrected asynchronously, following way can be used. </p>
 </aside>
+
+
 
 <span class="pln">
 </span></code></pre>
