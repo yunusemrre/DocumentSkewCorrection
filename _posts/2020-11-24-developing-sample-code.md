@@ -136,7 +136,7 @@ description: 15
 <pre><div id="copy-button24" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO After the detection is complete, stop the analyzer to release detection resources.
 </code></pre>
 
-<p><strong>14. Locate TODO for stopping the analyzer if detection is complete for releasing detection resources</strong></p>
+<p><strong>14. Stop the analyzer if detection is complete for releasing detection resources</strong></p>
 <pre><div id="copy-button25" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
 <span class="pln">analyzer.stop()</span>
 <span class="pln"></span></code>
