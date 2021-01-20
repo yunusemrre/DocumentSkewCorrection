@@ -126,7 +126,7 @@ description: 15
 
 <span class="pln">correctAsync?.addOnFailureListener(OnFailureListener { </span>
   <span class="pln"> //Correction Failure</span>
-<span class="pln">})</span></code>
+<span class="pln">})</span></code></pre>
 
 <aside class="special">
   <p>When the return code is success, data contains bitmap image that corrected document image.</p>
