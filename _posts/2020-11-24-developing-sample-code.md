@@ -5,7 +5,7 @@ description: 15
 
 <p><strong>1. Locate following line for creating text box detection/correction analyzer and complete the code.</strong></p>
 <pre><div id="copy-button10" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//Create a text box detection/correction analyzer.
-<span class="kwd">val </span><span class="pln">settings = </span><span class="typ">MLDocumentSkewCorrectionAnalyzerSetting</span><span class"pln">.Factory().create()</span>
+<span class="kwd">val </span><span class="pln">settings = </span><span class="typ">MLDocumentSkewCorrectionAnalyzerSetting</span><span class="pln">.Factory().create()</span>
 <span class="kwd">val </span><span class="pln">analyzer = </span><span class="typ">MLDocumentSkewCorrectionAnalyzerFactory</span><span class="pln">.getInstance().getDocumentSkewCorrectionAnalyzer </span><span class="pun">{</span>
 <span class="pln">setting</span>
 <span class="pun">}</span>
