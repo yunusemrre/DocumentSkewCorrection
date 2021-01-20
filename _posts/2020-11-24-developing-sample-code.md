@@ -4,27 +4,16 @@ description: 15
 ---
 
 <p><strong>1. Locate following line for creating text box detection/correction analyzer and complete the code.</strong></p>
-<pre><div id="copy-button10" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//Create a text box detection/correction analyzer.
+<pre><div id="copy-button10" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO Create a text box detection/correction analyzer.
 <span class="kwd">val </span><span class="pln">settings = </span><span class="typ">MLDocumentSkewCorrectionAnalyzerSetting</span><span class="pln">.Factory().create()</span>
 <span class="kwd">val </span><span class="pln">analyzer = </span><span class="typ">MLDocumentSkewCorrectionAnalyzerFactory</span><span class="pln">.getInstance().getDocumentSkewCorrectionAnalyzer </span><span class="pun">{</span>
-<span class="pln">setting</span>
+  <span class="pln">setting</span>
 <span class="pun">}</span>
 <span class="pln">
 </span></code></pre>
-<p><strong>2. Create the Wise Player Factory instance</strong></p>
-<pre><div id="copy-button11" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>    val factoryOptions = WisePlayerFactoryOptions.Builder().setDeviceId("xxx").build()
-    // In the multi-process scenario, the onCreate method in Application is called multiple times.
-    // The app needs to call the WisePlayerFactory.initFactory() API in the onCreate method of the app process (named "app package name") 
-    // and WisePlayer process (named "app package name:player").
-    WisePlayerFactory.initFactory(context, factoryOptions, object : InitFactoryCallback {
-        override fun onSuccess(factory: WisePlayerFactory) {
-            wisePlayerFactory = factory
-        }
-        override fun onFailure(errorCode: Int, msg: String) {
-            Log.d("WisePlayerInit", "onFailure: $errorCode - $msg")
-        }
-    })
-<span class="pln">
+<p><strong>2. Locate TODO for creating ML frame object by using Bitmap and complete the code.</strong></p>
+<pre><div id="copy-button11" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO Create an MLFrame object by using android.graphics.Bitmap for the analyzer to detect images
+<span class="kwd">val </span><span class="pln">frame = </span><span class="typ">MLFrame</span><span class="pln">.fromBitmap(bitmapImage)</span>
 </span></code></pre>
 <p>Description of <strong>Wise Player Factory</strong> is as following:<br></p>
 <table style="width: 100%;table-layout: fixed;">
