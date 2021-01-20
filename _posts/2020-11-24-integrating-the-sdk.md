@@ -78,7 +78,7 @@ For details, see <a href="https://developer.huawei.com/consumer/en/doc/HMSCore-G
 </span><span class="pun">}</span><span class="pln">
 </span></code></pre>
   </li>
-			<li>Configure the <strong>minSDKVersion</strong> in the app level build.gradle file.
+			<li>Check if AGC plugin is applied. If not enable the AGC plug-in in the app level <strong>build.gradle</strong> file.
       <pre><div id="copy-button4" class="copy-btn" title="Copy" onclick="copyCode(this.id)"><code><span class="pln">apply plugin: 'com.huawei.agconnect'</span><span class="pun">{</span><span class="pln">
   </li>
 </ul>  
