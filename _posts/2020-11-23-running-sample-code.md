@@ -11,5 +11,5 @@ description: 2
 	<li>Use <img style="width: 19.00px" src="https://github.com/yunusemrre/DocumentSkewCorrection/blob/master/assets/TakePhotoPicture.PNG" onclick="imageclick(src)"> button to take photo or use <img style="width: 19.00px" src="https://github.com/yunusemrre/DocumentSkewCorrection/blob/master/assets/SelectImageFromGalleryPicture.PNG" onclick="imageclick(src)"> button to access to your gallery and pick image. Grant necessary permissions in case system asks for it.</li>
 	<li>Wait for complete detection and recreate corrected document image.</li>
 </ol>
-<img style="width: 220.00px" src="https://github.com/yunusemrre/DocumentSkewCorrection/blob/master/assets/CorrectionSuccessImage.PNG" onclick="imageclick(src)">             <img style="width: 217.00px" src="https://github.com/yunusemrre/DocumentSkewCorrection/blob/master/assets/CorrectionFailedImage.PNG" onclick="imageclick(src)">
+<img style="width: 200.00px" src="https://github.com/yunusemrre/DocumentSkewCorrection/blob/master/assets/CorrectionSuccessImage.PNG" onclick="imageclick(src)">             <img style="width: 200.00px" src="https://github.com/yunusemrre/DocumentSkewCorrection/blob/master/assets/CorrectionFailedImage.PNG" onclick="imageclick(src)">
 
