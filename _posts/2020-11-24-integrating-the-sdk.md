@@ -82,6 +82,7 @@ For details, see <a href="https://developer.huawei.com/consumer/en/doc/HMSCore-G
       <pre><div id="copy-button4" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code><span class="pln">apply plugin: 'com.huawei.agconnect'
       </span></code></pre>
   </li>
+  <p><strong>Note</strong>:<mark> Make sure that you configure apply plugin: 'com.huawei.agconnect' after apply plugin: 'com.android.application'.</mark></p>
 </ul>  
 <p><strong>3. Configure obfuscation scripts.</strong></p>
 <ul>
