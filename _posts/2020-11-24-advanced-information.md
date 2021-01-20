@@ -13,7 +13,7 @@ description: 5
         <span class="pln">android:value= "dsc" /></span>
         <span class="pln">...</span>
     <span class="pln">...</span>
-<span class="pun"><</span>/application<span class="pun">></span></span><span class="pln">
+<span class="pun"><</span>/application<span class="pun">></span>
   </code></pre>
   </li>
 </ol>
