@@ -55,9 +55,24 @@ For details, see <a href="https://developer.huawei.com/consumer/en/doc/HMSCore-G
 	</span><span class="pun">}</span><span class="pln">
 	</span></code></pre>
       </li>
+      <li>Mode 2: Base SDK Integration
+      <pre><div id="copy-button4" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code><span class="pln">dependencies </span><span class="pun">{</span><span class="pln">
+		</span><span class="pun">...</span><span class="pln">
+    </span><span class="str">            //Import the base SDK</span><span class="pln">
+		implementation </span><span class="str">'com.huawei.hms:ml-computer-vision-documentskew:2.0.2.300'</span><span class="pln">
+		</span><span class="pun">...</span><span class="pln">
+	</span><span class="pun">}</span><span class="pln">
+	</span></code></pre>
+      </li>
     </ol>
 	</li>
-	<li>Add the following information under <strong>apply plugin: 'com.android.application'</strong> in the file header:<pre><div id="copy-button6" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code><span class="pln">apply plugin</span><span class="pun">:</span><span class="pln"> </span><span class="str">'com.huawei.agconnect'</span><span class="pln">
+  <li>Configure the <strong>minSDKVersion</strong> in the app level build.gradle file.
+    <pre><div id="copy-button4" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code><span class="pln">android </span><span class="pun">{</span><span class="pln">
+		</span><span class="pun">...</span><span class="pln">
+    </span><span class="str">            //Import the base SDK</span><span class="pln">
+		implementation </span><span class="str">'com.huawei.hms:ml-computer-vision-documentskew:2.0.2.300'</span><span class="pln">
+		</span><span class="pun">...</span><span class="pln">
+	</span><span class="pun">}</span><span class="pln">
 	</span></code></pre>
 	</li>
 </ul>
