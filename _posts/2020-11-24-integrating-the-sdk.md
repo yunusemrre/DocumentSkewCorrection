@@ -6,7 +6,7 @@ description: 5
 <p>You can download the codelab project from: <strong>URL WILL BE HERE</strong></p>
 
 <h2><strong>Creating a Project</strong></h2>
-<p><strong>Step 1</strong>: Start Android Studio.</p>
+<h4><strong>Step 1</strong>: Start Android Studio.</h4>
 <p><strong>Step 2</strong>: Choose <strong>File</strong> &gt; <strong>Open</strong>, go to the directory where the sample project is decompressed, and click <strong>OK</strong>.<br><img style="width: 376.00px" src="https://github.com/yunusemrre/DocumentSkewCorrection/blob/master/assets/DocumentSkewCorrectionProject.PNG" onclick="imageclick(src)"></p>
 <p><strong>Step 3</strong>: Configure the AppGallery Connect plug-in, Maven repository address, build dependencies, obfuscation scripts, and permissions. (These items have been configured in the sample code. If any of them does not meet your requirements, change it in your own project.)</p>
 <p><strong>1. Configure the Maven repository address and AppGallery Connect plug-in in the project's build.gradle file.</strong></p>
