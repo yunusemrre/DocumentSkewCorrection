@@ -82,7 +82,7 @@ For details, see <a href="https://developer.huawei.com/consumer/en/doc/HMSCore-G
       <pre><div id="copy-button4" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code><span class="pln">apply plugin: 'com.huawei.agconnect'
       </span></code></pre>
   </li>
-  <p><strong>Note</strong>:<mark> Make sure that you configure apply plugin: 'com.huawei.agconnect' after apply plugin: 'com.android.application'.</mark></p>
+  <p><strong>Note</strong>:Make sure that you configure apply plugin: 'com.huawei.agconnect' <mark>after</mark> apply plugin: 'com.android.application'</p>
 </ul>  
 <p><strong>3. Configure obfuscation scripts.</strong></p>
 <ul>
@@ -114,9 +114,7 @@ For details, see <a href="https://developer.huawei.com/consumer/en/doc/HMSCore-G
 	</li>
 </ul>
 <p><strong>4. Configure permissions in the AndroidManifest.xml file.</strong></p>
-<pre><div id="copy-button9" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code><span class="tag">&lt;uses-permission</span><span class="pln"> </span><span class="atn">android:name</span><span class="pun">=</span><span class="atv">"android.permission.INTERNET"</span><span class="tag">/&gt;</span><span class="pln">
-</span><span class="tag">&lt;uses-permission</span><span class="pln"> </span><span class="atn">android:name</span><span class="pun">=</span><span class="atv">"android.permission.ACCESS_NETWORK_STATE"</span><span class="tag">/&gt;</span><span class="pln">
-</span><span class="tag">&lt;uses-permission</span><span class="pln"> </span><span class="atn">android:name</span><span class="pun">=</span><span class="atv">"android.permission.ACCESS_WIFI_STATE"</span><span class="tag">/&gt;</span><span class="pln">
-</span><span class="tag">&lt;uses-permission</span><span class="pln"> </span><span class="atn">android:name</span><span class="pun">=</span><span class="atv">"com.huawei.permission.SECURITY_DIAGNOSE"</span><span class="tag">/&gt;</span><span class="pln">
-  </span></code></pre>
+<pre><div id="copy-button9" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code><span class="tag">&lt;uses-permission</span><span class="pln"> </span><span class="atn">android:name</span><span class="pun">=</span><span class="atv">"android.permission.CAMERA"</span><span class="tag">/&gt;</span><span class="pln">
+</span><span class="tag">&lt;uses-permission</span><span class="pln"> </span><span class="atn">android:name</span><span class="pun">=</span><span class="atv">"android.permission.WRITE_EXTERNAL_STORAGE"</span><span class="tag">/&gt;</span><span class="pln">
+</span></code></pre>
 <p><strong>Step 4</strong>: In the Android Studio window, choose <strong>File</strong> &gt; <strong>Sync Project with Gradle Files</strong> to synchronize the project.</p>
