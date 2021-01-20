@@ -25,7 +25,7 @@ description: 15
 <p><strong>3. Locate TODO for creating analyseFrame method and complete the code for detecting the text box synchronously.</strong></p>
 <pre><div id="copy-button12" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO Call the analyseFrame synchronous method to detect the text box.
 <span class="kwd">val </span><span class="pln">detectTask = SparseArray<</span><span class="typ">MLDocumentSkewDetectResult</span><span class="pln">> = analyzer.analyseFrame(frame)</span>
-<span class="kwd">if </span><span class="pln">(detectTask.get(0).</span><span class="typ">resultCode</span><span class="pln"> == MLDocumentSkewCorrectionConstant.</span><span class="type">SUCCESS</span><span>)</span) <span class="pun">{</span>
+<span class="kwd">if </span><span class="pln">(detectTask.get(0).</span><span class="typ">resultCode</span><span class="pln"> == MLDocumentSkewCorrectionConstant.</span><span class="type">SUCCESS</span><span>)</span> <span class="pun">{</span>
   <span class="pln">//Detection Success</span>
 <span class="pun">} else </span><span class="pun">{</span>
   <span class="pln">//Detection Failure</span>
@@ -35,6 +35,7 @@ description: 15
 <aside class = "special">
 <p><strong>Note:</strong> If text box needs to be detected asynchronously, following way can be used.</p>
 </aside>
+
 
 
 <p><strong>9. Locate following line in Play Activity.</strong></p>
