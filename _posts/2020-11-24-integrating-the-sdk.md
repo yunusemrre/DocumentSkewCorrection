@@ -34,25 +34,25 @@ description: 5
       <pre>
         <div id="copy-button1" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div>
         <code>
-          <span class="pln">allprojects </span>
-          <span class="pun">{</span>
-          <span class="pln">
-  repositories </span>
-          <span class="pun">{</span>
-          <span class="pln">
-    maven </span>
-          <span class="pun">{</span>
-          <span class="pln"> url </span>
-          <span class="str">'https://developer.huawei.com/repo/'</span>
-          <span class="pln"></span>
-          <span class="pun">}</span>
-          <span class="pln"></span>
-          <span class="pun">...</span>
-          <span class="pln"></span>
-          <span class="pun">}</span>
-          <span class="pln"></span>
-          <span class="pun">}</span>
-          <span class="pln"></span>
+<span class="pln">allprojects </span>
+<span class="pun">{</span>
+<span class="pln">
+repositories </span>
+<span class="pun">{</span>
+<span class="pln">
+ maven </span>
+<span class="pun">{</span>
+<span class="pln"> url </span>
+<span class="str">'https://developer.huawei.com/repo/'</span>
+<span class="pln"></span>
+<span class="pun">}</span>
+<span class="pln"></span>
+<span class="pun">...</span>
+<span class="pln"></span>
+<span class="pun">}</span>
+<span class="pln"></span>
+<span class="pun">}</span>
+<span class="pln"></span>
         </code>
       </pre>
     </li>
