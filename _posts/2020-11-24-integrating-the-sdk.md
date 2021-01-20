@@ -1,5 +1,5 @@
 ---
-title: Set up the Project
+title: Integration the Document Skew Correction SDK
 description: 5
 ---
 
@@ -7,7 +7,7 @@ description: 5
 
 <h2><strong>Creating a Project</strong></h2>
 <p><strong>Step 1</strong>: Start Android Studio.</p>
-<p><strong>Step 2</strong>: Choose <strong>File</strong> &gt; <strong>Open</strong>, go to the directory where the sample project is decompressed, and click <strong>OK</strong>.<br><img style="width: 376.00px" src="https://raw.githubusercontent.com/bekiryavuzkoc/testRepo/gh-pages/assets/videokitcodelab.PNG" onclick="imageclick(src)"></p>
+<p><strong>Step 2</strong>: Choose <strong>File</strong> &gt; <strong>Open</strong>, go to the directory where the sample project is decompressed, and click <strong>OK</strong>.<br><img style="width: 376.00px" src="https://github.com/yunusemrre/DocumentSkewCorrection/blob/master/assets/DocumentSkewCorrectionProject.PNG" onclick="imageclick(src)"></p>
 <p><strong>Step 3</strong>: Configure the AppGallery Connect plug-in, Maven repository address, build dependencies, obfuscation scripts, and permissions. (These items have been configured in the sample code. If any of them does not meet your requirements, change it in your own project.)</p>
 <p><strong>1. Configure the Maven repository address and AppGallery Connect plug-in in the project's build.gradle file.</strong></p>
 <ul>
@@ -39,6 +39,8 @@ description: 5
 	</li>
 </ul>
 <p><strong>2. Configure the dependency package in the app's build.gradle file.</strong></p>
+&#9ML Kit provides two SDK integration modes: full SDK and base SDK. You can select either one based on your needs.</pre>
+For details, see <a href="https://developer.huawei.com/consumer/en/doc/HMSCore-Guides-V5/overview-sdk-0000001051070278-V5" target="_blank">Full SDK and base SDK in Overview</a>.
 <ul>
 	<li>Add a dependency package to the <strong>dependencies</strong> section in the <strong>build.gradle</strong> file.<pre><div id="copy-button4" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code><span class="pln">dependencies </span><span class="pun">{</span><span class="pln">
 		</span><span class="pun">...</span><span class="pln">
