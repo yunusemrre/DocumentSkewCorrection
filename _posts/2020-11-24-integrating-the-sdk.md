@@ -115,10 +115,10 @@ description: 5
   <p>
     <strong>2. Configure the dependency package in the app's build.gradle file.</strong>
   </p>
-&#9ML Kit provides two SDK integration modes: full SDK and base SDK. You can select either one based on your needs.
-</pre>
+<p>&#9;ML Kit provides two SDK integration modes: full SDK and base SDK. You can select either one based on your needs.</pre>
 For details, see 
 <a href="https://developer.huawei.com/consumer/en/doc/HMSCore-Guides-V5/overview-sdk-0000001051070278-V5" target="_blank">Full SDK and base SDK in Overview</a>.
+</p>
 <ul>
   <li>Add a dependency package to the 
     <strong>dependencies</strong> section in the 
