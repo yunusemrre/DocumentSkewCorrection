@@ -11,11 +11,15 @@ description: 15
 <span class="pun">}</span>
 <span class="pln">
 </span></code></pre>
+
 <p><strong>2. Locate TODO for creating ML frame object by using Bitmap and complete the code.</strong></p>
 <pre><div id="copy-button11" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO Create an MLFrame object by using android.graphics.Bitmap for the analyzer to detect images
 <span class="kwd">val </span><span class="pln">frame = </span><span class="typ">MLFrame</span><span class="pln">.fromBitmap(bitmapImage)</span>
 </code></pre>
-
+<lu>
+  <li>JPG, JPEG and PNG are supperted image resources.</li>
+  <li>It is recommended that the image size be within the range of 320x320 px to 1920x1920 px.</li>
+</lu>
 <p><strong>9. Locate following line in Play Activity.</strong></p>
 <pre><div id="copy-button19" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code> //TODO Callback Listener
 <span class="pln">
