@@ -79,6 +79,7 @@ For details, see <a href="https://developer.huawei.com/consumer/en/doc/HMSCore-G
 </span></code></pre>
   </li>
 			<li>Configure the <strong>minSDKVersion</strong> in the app level build.gradle file.
+      <pre><div id="copy-button4" class="copy-btn" title="Copy" onclick="copyCode(this.id)"><code><span class="pln">apply plugin: 'com.huawei.agconnect'</span><span class="pun">{</span><span class="pln">
   </li>
 </ul>  
 <p><strong>3. Configure obfuscation scripts.</strong></p>
