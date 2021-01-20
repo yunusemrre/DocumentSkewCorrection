@@ -3,7 +3,7 @@ title: Developing Sample Project
 description: 15
 ---
 
-<p><strong>1. In the MainActivityPresenter.kt locate following line for creating text box detection/correction analyzer </strong></p>
+<p><strong>1. In the MainActivityPresenter.kt locate following line for creating text box detection/correction analyzer.</strong></p>
 <pre><div id="copy-button10" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO Create a text box detection/correction analyzer.
 <span class="pln">
 </span></code></pre>
@@ -19,11 +19,12 @@ description: 15
 
 <p><strong>3. Locate following line for creating ML frame object by using Bitmap.</strong></p>
 <pre><div id="copy-button12" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO Create an MLFrame object by using android.graphics.Bitmap for the analyzer to detect images
-</code></pre>
+<span class="pln"></span></code></pre>
 
 <p><strong>4. Initialize ML frame object by using Bitmap.</strong></p>
 <pre><div id="copy-button13" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
 <span class="kwd">val </span><span class="pln">frame = </span><span class="typ">MLFrame</span><span class="pln">.fromBitmap(bitmapImage)</span>
+<span class="pln"></span>
 </code></pre>
 <aside class="special">
   <lu>
@@ -32,7 +33,7 @@ description: 15
   </lu>
 </aside>
 
-<p><strong>After initializations locate following line to call analyseFrame object to detect the box synchronously.</strong></p>
+<p><strong>5. After initializations locate following line to call analyseFrame object to detect the box synchronously.</strong></p>
 <pre><div id="copy-button14" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO Call the analyseFrame synchronous method to detect the text box.
 </code></pre>
 
