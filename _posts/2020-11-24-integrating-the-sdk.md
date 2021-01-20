@@ -68,9 +68,9 @@ For details, see <a href="https://developer.huawei.com/consumer/en/doc/HMSCore-G
 	</li>
   <li>Configure the <strong>minSDKVersion</strong> in the app level build.gradle file.
     <pre><div id="copy-button4" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code><span class="pln">android </span><span class="pun">{</span><span class="pln">
-    </span><span class="pun">...</span><span class="pln">
-      </span><span class="pln">android </span><span class="pun">{</span><span class="pln">
-        </span><span class="pun">...</span><span class="pln">
+  </span><span class="pun">...</span><span class="pln">
+    </span><span class="pln">android </span><span class="pun">{</span><span class="pln">
+      </span><span class="pun">...</span><span class="pln">
           <span class="str">minSdkVersion 19</span><span class="pln">
       </span><span class="pun">...</span><span class="pln">
     </span><span class="pun">}</span><span class="pln">
