@@ -19,7 +19,8 @@ description: 15
 
 <p><strong>3. Locate following line for creating ML frame object by using Bitmap.</strong></p>
 <pre><div id="copy-button12" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO Create an MLFrame object by using android.graphics.Bitmap for the analyzer to detect images
-<span class="pln"></span></code></pre>
+<span class="pln">
+</span></code></pre>
 
 <p><strong>4. Initialize ML frame object by using Bitmap.</strong></p>
 <pre><div id="copy-button13" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
@@ -35,7 +36,8 @@ description: 15
 
 <p><strong>5. After initializations locate following line to call analyseFrame object to detect the box synchronously.</strong></p>
 <pre><div id="copy-button14" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO Call the analyseFrame synchronous method to detect the text box.
-</code></pre>
+<span class="pln">
+</span></code></pre>
 
 <p><strong>6. Create analyseFrame method and complete the code for detecting the text box synchronously.</strong></p>
 <pre><div id="copy-button15" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
@@ -64,7 +66,8 @@ description: 15
 
 <p><strong>7. Locate following line to get detection result if detection is success</strong></p>
 <pre><div id="copy-button17" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO If detection is success get detection result.
-</code></pre>
+<span class="pln">
+</span></code></pre>
 
 <p><strong>8. Get first result if detection is success</strong></p>
 <pre><div id="copy-button18" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
@@ -74,7 +77,8 @@ description: 15
 
 <p><strong>9. Locate following line to obtain coordinates of result</strong></p>
 <pre><div id="copy-button19" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO Obtain the coordinate data for the four vertices of the text box and create an MLDocumentSkewCorrectionCoordinateInput object
-</code></pre>
+<span class="pln">
+</span></code></pre>
 
 <p><strong>10. Obtain the coordinates of detection result and complete the code to create MLDocumentSkewCorrectionCoordinateInput result.</strong></p>
 <pre><div id="copy-button20" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
@@ -100,8 +104,8 @@ description: 15
 </aside>
 
 <p><strong>11. Locate following line to correct text box.</strong></p>
-<pre><div id="copy-button21" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO Call the syncDocumentSkewCorrect synchronous method to correct the text box.
-</code></pre>
+<pre><div id="copy-button21" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO Call the syncDocumentSkewCorrect synchronous method to correct the text box.<span class="pln">
+</span></code></pre>
 
 <p><strong>12. Call synchronized syncDocumentSkew method and complete the code to correct the text box.</strong></p>
 <pre><div id="copy-button22" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
@@ -135,7 +139,8 @@ description: 15
 
 <p><strong>13. Locate following line to stop the analyzer after detection to release detection resources</strong></p>
 <pre><div id="copy-button24" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO After the detection is complete, stop the analyzer to release detection resources.
-</code></pre>
+<span class="pln">
+</span></code></pre>
 
 <p><strong>14. Stop the analyzer if detection is complete for releasing detection resources</strong></p>
 <pre><div id="copy-button25" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
