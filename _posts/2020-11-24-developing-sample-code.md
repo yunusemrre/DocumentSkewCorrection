@@ -35,7 +35,16 @@ description: 15
 <aside class = "special">
 <p><strong>Note:</strong> If text box needs to be detected asynchronously, following way can be used.</p>
 </aside>
-
+<pre><div id="copy-button13" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>//TODO Call the analyseFrame asynchronous method to detect the text box.
+<span class="kwd">val </span><span class="pln">detectTaskAsync = Task<</span><span class="typ">MLDocumentSkewDetectResult</span><span class="pln">> = analyzer.asyncDocumentSkewDetect(frame)</span>
+<span class="pln">detectTaskAsync?.addonSuccessListener (OnSuccessListener() </span><span class="pun">{ </span>
+  <span class="pln">//Detection Success</span>
+<span class="pun">})</span><span class="pun">{</span>
+<span class="pun">detectTaskAsync?.addOnFailureListener (OnFailureListener() </span><span class="pun">{ </span>
+  <span class="pln">//Detection Failure</span>
+<span class="pun">})</span><span class="pun">{</span>
+<span class="pln"></span>
+</code></pre>
 
 
 <p><strong>9. Locate following line in Play Activity.</strong></p>
