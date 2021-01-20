@@ -42,7 +42,7 @@ description: 5
 ML Kit provides two SDK integration modes: full SDK and base SDK. You can select either one based on your needs.
 For details, see <a href="https://developer.huawei.com/consumer/en/doc/HMSCore-Guides-V5/overview-sdk-0000001051070278-V5" target="_blank">Full SDK and base SDK in Overview</a>.
 <ul>
-	<li>Verify if Document Skew Correction dependency that selected integration mode has been added.If not select one of these two mode and add it as following to the <strong>dependencies</strong> section in the app level <strong>build.gradle</strong> file.<pre><div id="copy-button4" class="copy-btn" title="Copy" onclick="copyCode(this.id)"><li> Mode 1: Full SDK Integration (Recommended)</li></div><code><span class="pln">dependencies </span><span class="pun">{</span><span class="pln">
+	<li>Verify if Document Skew Correction dependency that selected integration mode has been added.If not select one of these two mode and add it as following to the <strong>dependencies</strong> section in the app level <strong>build.gradle</strong> file.<pre><li> Mode 1: Full SDK Integration (Recommended)</li><div id="copy-button4" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code><span class="pln">dependencies </span><span class="pun">{</span><span class="pln">
 		</span><span class="pun">...</span><span class="pln">
     </span><span class="str">            //Import the base SDK</span><span class="pln">
 		implementation </span><span class="str">'com.huawei.hms:ml-computer-vision-documentskew:2.0.2.300'</span><span class="pln">
